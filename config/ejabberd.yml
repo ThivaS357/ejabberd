@@ -643,7 +643,7 @@ modules:
   mod_time: {}
   mod_vcard: {}
   mod_version: {}
-  mod_http_offline: {}
+  mod_chapz_fcm: {}
 
 ##
 ## Enable modules with custom options in a specific virtual host
@@ -666,3 +666,5 @@ allow_contrib_modules: true
 ### mode: yaml
 ### End:
 ### vim: set filetype=yaml tabstop=8
+
+chapz_fcm_url: "http://localhost:7100/chapz/offline/message"

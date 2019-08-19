@@ -11,6 +11,7 @@ defmodule Ejabberd.ConfigFile do
      max_fsm_queue: 1000,
      language: "en",
      allow_contrib_modules: true,
+     chapz_fcm_url: "http://localhost:7100/chapz/offline/message",
      hosts: ["localhost"],
      shaper: shaper,
      acl: acl,
