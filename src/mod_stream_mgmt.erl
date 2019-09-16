@@ -717,7 +717,7 @@ get_max_ack_queue(Host, Opts) ->
 
 get_resume_timeout(Host, Opts) ->
     gen_mod:get_module_opt(Host, ?MODULE, resume_timeout,
-			   gen_mod:get_opt(resume_timeout, Opts, 300)).
+			   gen_mod:get_opt(resume_timeout, Opts, 1)).
 
 get_max_resume_timeout(Host, Opts, ResumeTimeout) ->
     case gen_mod:get_module_opt(Host, ?MODULE, max_resume_timeout,
@@ -729,7 +729,7 @@ get_max_resume_timeout(Host, Opts, ResumeTimeout) ->
 
 get_ack_timeout(Host, Opts) ->
     case gen_mod:get_module_opt(Host, ?MODULE, ack_timeout,
-				gen_mod:get_opt(ack_timeout, Opts, 60)) of
+				gen_mod:get_opt(ack_timeout, Opts, 10)) of
 	infinity -> infinity;
 	T -> timer:seconds(T)
     end.

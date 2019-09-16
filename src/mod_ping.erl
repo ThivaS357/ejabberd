@@ -40,7 +40,7 @@
 
 -define(DEFAULT_SEND_PINGS, false).
 
--define(DEFAULT_PING_INTERVAL, 60).
+-define(DEFAULT_PING_INTERVAL, 10).
 
 %% API
 -export([start_ping/2, stop_ping/2]).

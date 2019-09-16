@@ -44,8 +44,8 @@
 
 -include("ejabberd_http.hrl").
 
--define(PING_INTERVAL, 60).
--define(WEBSOCKET_TIMEOUT, 300).
+-define(PING_INTERVAL, 10).
+-define(WEBSOCKET_TIMEOUT, 1).
 
 -record(state,
         {socket                       :: ws_socket(),
